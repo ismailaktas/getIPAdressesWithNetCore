@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "GetIPAdress";
+}
+
+<div class="text-center">
+    <h4 style="color:green">Sunucuya ait Local (İç Network) IP Adresi: @ViewData["serverLocalIPAdress"]</h4>
+    <h4 style="color:red">Sunucuya ait Public (İnternet) IP Adresi: @ViewData["serverPublicIPAdress"]</h4>
+    <hr />
+    <h4 style="color:blue">Ziyaretçi IP Adresi - Yöntem 1: @ViewData["clientIPAdress1"]</h4>
+    <h4 style="color:purple">Ziyaretçi IP Adresi - Yöntem 2: @ViewData["clientIPAdress2"]</h4>
+    <hr />
+    <div>Ziyaretçi IP adresi IPv6 nedeniyle geri döngü adresi (loopback adrees) olarak ::1 olarak görünebilir.</div>
+</div>
